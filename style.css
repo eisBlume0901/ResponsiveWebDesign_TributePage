@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  color: white;
-  background-color: black;
+  color: #FFFFFF;
+  background-color: #000000;
   font-family: Cartogothic, Nimbus Sans, Inter, serif;
 }
 
@@ -30,11 +30,12 @@ header > nav {
 
 nav > ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 li {
   display: block;
+  padding: 0.25rem;
 }
 
 a {
@@ -43,7 +44,7 @@ a {
 }
 
 #image {
-  width: 100vw;
+  width: 50vw;
   max-width: 100%;
   height: auto;
   display: block;
@@ -54,6 +55,7 @@ a {
   text-align: center;
   padding: 0.5rem;
 }
+
 #artworks {
   display: flex;
   flex-direction: row;
@@ -61,7 +63,6 @@ a {
   justify-content: center;
   align-content: center;
   gap: 0;
-  max-width: 88rem;
 }
 
 #artworks figcaption {
@@ -74,4 +75,9 @@ a {
   height: 18rem;
   max-width: 20rem;
   object-fit: cover;
+}
+
+#tribute-info {
+  padding: 0.5rem 4.5rem;
+  text-align: center;
 }
