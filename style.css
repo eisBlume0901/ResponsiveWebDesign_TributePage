@@ -87,6 +87,7 @@ a {
   text-align: justify-all;
   line-height: 1.75;
   font-size: min(3vw, 1rem);
+  text-indent: 3rem;
 }
 
 #facts {
@@ -125,4 +126,10 @@ a:hover {
   background-color: #f2f2f2;
   color: #0A2342;
   padding: 0.25rem;
+}
+
+a:active {
+  background-color: #F5DB37;
+  color: #0A2342;
+  font-weight: bold;
 }
