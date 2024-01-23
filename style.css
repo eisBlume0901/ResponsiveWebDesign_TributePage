@@ -1,23 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   color: #FFFFFF;
   background-color: #000000;
   font-family: Cartogothic, Nimbus Sans, Inter, serif;
+  margin: auto;
+  padding: 0.5rem;
+  width: 85vw;
 }
 
 header {
-  width: 100%;
+  width: inherit;
   height: 5vw;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 7rem;
-  padding-right: 0.75rem;
-  padding-left: 0.5rem;
-  top: 0;
   position: fixed;
   background-color: black;
+  top: 0;
+  padding: 0 0 8rem 0;
 }
 
 header > h1 {
@@ -25,7 +27,7 @@ header > h1 {
   font-size: min(5vw, 3rem);
 }
 header > nav {
-  font-size: min(4vw, 2.25rem);
+  font-size: min(4vw, 2rem);
 }
 
 nav > ul {
@@ -33,9 +35,10 @@ nav > ul {
   justify-content: space-between;
 }
 
-li {
+nav > ul > li {
   display: block;
-  padding: 0.25rem;
+  padding: 0.5rem;
+  font-size: inherit;
 }
 
 a {
@@ -54,6 +57,7 @@ a {
 #img-caption {
   text-align: center;
   padding: 0.5rem;
+  font-style: italic;
 }
 
 #artworks {
@@ -67,7 +71,8 @@ a {
 
 #artworks figcaption {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: max(0.95vw, 0.85rem);
+  font-style: italic;
 }
 
 #artworks img {
@@ -78,6 +83,29 @@ a {
 }
 
 #tribute-info {
-  padding: 0.5rem 4.5rem;
   text-align: center;
+  line-height: 1.75;
+  font-size: min(3vw, 1rem);
+}
+
+#facts {
+  font-size: inherit;
+}
+
+.keyword {
+  font-style: italic;
+}
+
+ul > li {
+  line-height: 1.75;
+  font-size: min(3vw, 1rem);
+}
+
+h2 {
+  text-align: center;
+  margin: auto;
+  font-size: min(5vw, 3rem);
+  font-weight: 300;
+  border-top: solid 0.25rem white;
+  padding: 2rem;
 }
